@@ -1,6 +1,10 @@
 ﻿namespace Messenger.API.Endpoints
 {
-    public class FIleModule
+    /// <summary>
+    /// endpoints к подгузке файла 
+    /// для дальнейшей работе с мессенджером
+    /// </summary>
+    public static class FIleModule
     {
     }
 }

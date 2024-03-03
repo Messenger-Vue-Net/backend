@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddPersistence(builder.Configuration);
-builder.Services.AddApplication(builder.Configuration);
+builder.Services.AddPersistence(builder.Configuration); // база данных
+builder.Services.AddApplication(builder.Configuration); // фунционал
 
 var app = builder.Build();
 
@@ -19,5 +19,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.
 
 await app.RunAsync();
